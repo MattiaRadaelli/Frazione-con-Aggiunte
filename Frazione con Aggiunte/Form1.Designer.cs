@@ -36,18 +36,21 @@
             this.prodotto = new System.Windows.Forms.Button();
             this.divisione = new System.Windows.Forms.Button();
             this.Semplifica = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Num
             // 
-            this.Num.Location = new System.Drawing.Point(83, 52);
+            this.Num.Location = new System.Drawing.Point(158, 56);
             this.Num.Name = "Num";
             this.Num.Size = new System.Drawing.Size(47, 20);
             this.Num.TabIndex = 0;
             // 
             // Den
             // 
-            this.Den.Location = new System.Drawing.Point(83, 91);
+            this.Den.Location = new System.Drawing.Point(158, 89);
             this.Den.Name = "Den";
             this.Den.Size = new System.Drawing.Size(47, 20);
             this.Den.TabIndex = 1;
@@ -55,7 +58,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(80, 75);
+            this.label1.Location = new System.Drawing.Point(155, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 2;
@@ -63,7 +66,7 @@
             // 
             // piu
             // 
-            this.piu.Location = new System.Drawing.Point(226, 56);
+            this.piu.Location = new System.Drawing.Point(190, 132);
             this.piu.Name = "piu";
             this.piu.Size = new System.Drawing.Size(25, 23);
             this.piu.TabIndex = 3;
@@ -73,7 +76,7 @@
             // 
             // meno
             // 
-            this.meno.Location = new System.Drawing.Point(257, 56);
+            this.meno.Location = new System.Drawing.Point(106, 133);
             this.meno.Name = "meno";
             this.meno.Size = new System.Drawing.Size(25, 23);
             this.meno.TabIndex = 4;
@@ -83,7 +86,7 @@
             // 
             // prodotto
             // 
-            this.prodotto.Location = new System.Drawing.Point(226, 88);
+            this.prodotto.Location = new System.Drawing.Point(230, 132);
             this.prodotto.Name = "prodotto";
             this.prodotto.Size = new System.Drawing.Size(25, 23);
             this.prodotto.TabIndex = 5;
@@ -93,9 +96,9 @@
             // 
             // divisione
             // 
-            this.divisione.Location = new System.Drawing.Point(257, 88);
+            this.divisione.Location = new System.Drawing.Point(147, 132);
             this.divisione.Name = "divisione";
-            this.divisione.Size = new System.Drawing.Size(25, 23);
+            this.divisione.Size = new System.Drawing.Size(25, 24);
             this.divisione.TabIndex = 6;
             this.divisione.Text = "/";
             this.divisione.UseVisualStyleBackColor = true;
@@ -103,19 +106,49 @@
             // 
             // Semplifica
             // 
-            this.Semplifica.Location = new System.Drawing.Point(138, 56);
+            this.Semplifica.Location = new System.Drawing.Point(23, 56);
             this.Semplifica.Name = "Semplifica";
-            this.Semplifica.Size = new System.Drawing.Size(82, 55);
+            this.Semplifica.Size = new System.Drawing.Size(82, 23);
             this.Semplifica.TabIndex = 7;
             this.Semplifica.Text = "Semplifica";
             this.Semplifica.UseVisualStyleBackColor = true;
             this.Semplifica.Click += new System.EventHandler(this.Semplifica_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(23, 82);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Decimale";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(254, 56);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(82, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Elevazione";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(254, 85);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(82, 20);
+            this.textBox1.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(374, 189);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Semplifica);
             this.Controls.Add(this.divisione);
             this.Controls.Add(this.prodotto);
@@ -142,6 +175,9 @@
         private System.Windows.Forms.Button prodotto;
         private System.Windows.Forms.Button divisione;
         private System.Windows.Forms.Button Semplifica;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

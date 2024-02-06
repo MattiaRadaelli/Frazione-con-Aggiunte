@@ -88,6 +88,27 @@ namespace ClasseFrazione
             if (Inserimento())
                 MessageBox.Show("Il quoziente è " + frazione.Divisione());
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Inserimento())
+                MessageBox.Show("Il valore decimale è " + frazione.Divisione());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Inserimento();
+            for (int i = 1; i < Convert.ToInt16(textBox1.Text); i++)
+            {
+                frazione._numeratore = frazione._numeratore * frazione._numeratore;
+            }
+            for (int i = 1; i < Convert.ToInt16(textBox1.Text); i++)
+            {
+                frazione._denominatore = frazione._denominatore * frazione._denominatore;
+            }
+            Den.Text = frazione._denominatore.ToString();
+            Num.Text = frazione._numeratore.ToString();
+        }
     }
     class Frazione
     {
